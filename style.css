@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdf9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: #3d7452;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #4b8b62;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* Hero */
+
+.hero {
+    max-width: 1100px;
+    min-height: 600px;
+    margin: auto;
+    padding: 70px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pet-circle {
+    width: 350px;
+    height: 350px;
+}
+
+.pet-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.small-title,
+.section-label {
+    color: #4b8b62;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    display: block;
+    color: #4b8b62;
+}
+
+.hero-text {
+    color: #666;
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.primary-btn {
+    background-color: #4b8b62;
+    color: white;
+    border: 1px solid #4b8b62;
+}
+
+.primary-btn:hover {
+    background-color: #3d7452;
+}
+
+.secondary-btn {
+    color: #4b8b62;
+    border: 1px solid #4b8b62;
+    background-color: transparent;
+}
+
+.secondary-btn:hover {
+    background-color: #eef7f0;
+}
+
+
+/* Pet Visual */
+
+.hero-image {
+    position: relative;
+    width: 350px;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pet-circle {
+    width: 400px;
+    height: 400px;
+
+    background: none;
+    border-radius: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 130px;
+}
+
+/* Common Sections */
+
+.simple-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.simple-section h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.simple-section > p:not(.section-label) {
+    color: #666;
+}
+
+
+/* Reminder */
+
+.reminder-box {
+    margin-top: 35px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.reminder-box div {
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.reminder-box h3 {
+    margin-bottom: 8px;
+}
+
+.reminder-box p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* About */
+
+.about-section {
+    max-width: 800px;
+}
+
+
+/* Contact */
+
+.contact-section {
+    padding-bottom: 100px;
+}
+
+.contact-section .primary-btn {
+    margin-top: 20px;
+}
+
+
+/* Modal */
+
+.modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal-content {
+    position: relative;
+
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+#contactForm textarea {
+    resize: none;
+}
+
+#contactForm .primary-btn {
+    font-family: inherit;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #4b8b62;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+
+        background-color: white;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding: 20px;
+
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 50px;
+        padding-bottom: 60px;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .pet-circle {
+        width: 220px;
+        height: 220px;
+        font-size: 100px;
+    }
+
+    .reminder-box {
+        grid-template-columns: 1fr;
+    }
+
+    .simple-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+}

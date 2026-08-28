@@ -1,0 +1,432 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdf9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #3d7452;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #4b8b62;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   REMINDER PAGE
+========================= */
+
+.reminder-page {
+    max-width: 1100px;
+    min-height: 650px;
+
+    margin: auto;
+    padding: 70px 25px 80px;
+
+    text-align: center;
+}
+
+.section-label {
+    color: #4b8b62;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.reminder-page h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.reminder-intro {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   REMINDER CARDS
+========================= */
+
+.reminder-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.reminder-card {
+    background-color: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+
+    padding: 30px 25px;
+
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.reminder-card h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.reminder-card p {
+    color: #666;
+    font-size: 14px;
+    min-height: 45px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   ADD REMINDER BUTTON
+========================= */
+
+.reminder-btn {
+    border: 1px solid #4b8b62;
+    background-color: transparent;
+
+    color: #4b8b62;
+
+    padding: 10px 18px;
+    border-radius: 7px;
+
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.reminder-btn:hover {
+    background-color: #4b8b62;
+    color: #ffffff;
+}
+
+
+/* =========================
+   SAVED REMINDERS
+========================= */
+
+#savedReminders {
+    max-width: 800px;
+    margin: 45px auto 0;
+    text-align: left;
+}
+
+#savedReminders h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.saved-reminder {
+    background-color: #ffffff;
+
+    border: 1px solid #eeeeee;
+    border-left: 4px solid #4b8b62;
+
+    border-radius: 8px;
+
+    padding: 16px 18px;
+    margin-bottom: 12px;
+}
+
+.saved-reminder h4 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.saved-reminder p {
+    color: #666;
+    font-size: 14px;
+}
+
+.delete-reminder {
+    margin-top: 8px;
+
+    border: none;
+    background: none;
+
+    color: #d9534f;
+
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+
+    background-color: #ffffff;
+
+    width: 100%;
+    max-width: 430px;
+
+    padding: 30px;
+
+    border-radius: 12px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    border: none;
+    background: none;
+
+    font-size: 28px;
+    color: #555;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   REMINDER FORM
+========================= */
+
+#reminderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#reminderForm input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+#reminderForm input:focus {
+    outline: none;
+    border-color: #4b8b62;
+}
+
+#reminderForm label {
+    font-size: 13px;
+    color: #555;
+    text-align: left;
+    margin-top: 3px;
+}
+
+#reminderForm .primary-btn {
+    margin-top: 8px;
+}
+
+
+/* =========================
+   PRIMARY BUTTON
+========================= */
+
+.primary-btn {
+    display: inline-block;
+
+    background-color: #4b8b62;
+    color: #ffffff;
+
+    border: 1px solid #4b8b62;
+    border-radius: 7px;
+
+    padding: 11px 20px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.primary-btn:hover {
+    background-color: #3d7452;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #4b8b62;
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 18px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 16px 20px;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 65px;
+        left: 0;
+
+        width: 100%;
+
+        background-color: #ffffff;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 18px;
+
+        padding: 20px;
+
+        border-bottom: 1px solid #eeeeee;
+
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+
+    .reminder-page {
+        padding: 50px 20px 60px;
+    }
+
+    .reminder-page h1 {
+        font-size: 34px;
+    }
+
+    .reminder-box {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .reminder-card {
+        padding: 25px 20px;
+    }
+
+    .card-icon {
+        font-size: 40px;
+    }
+
+
+    .modal-content {
+        padding: 25px 20px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pet Reminders | PetCare</title>
+
+    <link rel="stylesheet" href="reminder.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                PetCare 🐾
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reminder.html">Reminder</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Reminder Section -->
+
+    <main>
+
+        <section class="reminder-page">
+
+            <p class="section-label">PET CARE</p>
+
+            <h1>Pet Reminders 🔔</h1>
+
+            <p class="reminder-intro">
+                Keep track of your pet's important daily care activities.
+            </p>
+
+
+            <!-- Reminder Cards -->
+
+            <div class="reminder-box">
+
+                <!-- Vaccination -->
+
+                <div class="reminder-card" data-type="vaccination">
+
+                    <div class="card-icon">
+                        💉
+                    </div>
+
+                    <h2>Vaccination</h2>
+
+                    <p>
+                        Keep track of your pet's vaccination dates.
+                    </p>
+
+                    <button class="reminder-btn">
+                        Add Reminder
+                    </button>
+
+                </div>
+
+
+                <!-- Medicine -->
+
+                <div class="reminder-card" data-type="medicine">
+
+                    <div class="card-icon">
+                        💊
+                    </div>
+
+                    <h2>Medicine</h2>
+
+                    <p>
+                        Remember your pet's medicine schedule.
+                    </p>
+
+                    <button class="reminder-btn">
+                        Add Reminder
+                    </button>
+
+                </div>
+
+
+                <!-- Food -->
+
+                <div class="reminder-card" data-type="food">
+
+                    <div class="card-icon">
+                        🍖
+                    </div>
+
+                    <h2>Food</h2>
+
+                    <p>
+                        Set a regular food schedule for your pet.
+                    </p>
+
+                    <button class="reminder-btn">
+                        Add Reminder
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Saved Reminders -->
+
+            <div id="savedReminders"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Reminder Modal -->
+
+    <div class="modal" id="reminderModal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-btn"
+                id="reminderClose">
+                &times;
+            </button>
+
+            <h2 id="modalTitle">
+                Add Reminder 🐾
+            </h2>
+
+
+            <form id="reminderForm">
+
+                <input
+                    type="text"
+                    id="petName"
+                    placeholder="Pet Name"
+                    required
+                >
+
+
+                <input
+                    type="text"
+                    id="reminderName"
+                    placeholder="Reminder Name"
+                    required
+                >
+
+
+                <label for="reminderDate">
+                    Date
+                </label>
+
+                <input
+                    type="date"
+                    id="reminderDate"
+                    required
+                >
+
+
+                <div id="timeField">
+
+                    <label for="reminderTime">
+                        Time
+                    </label>
+
+                    <input
+                        type="time"
+                        id="reminderTime"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+                    Save Reminder
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 PetCare 🐾 | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <script src="reminder.js"></script>
+
+</body>
+</html>

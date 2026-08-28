@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PetCare | Take Care of Your Pets</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                PetCare 🐾
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="reminder.html">Reminder</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="small-title">WELCOME TO PETCARE 🐾</p>
+
+                <h1>
+                    Take Better Care
+                    <span>Of Your Pets</span>
+                </h1>
+
+                <p class="hero-text">
+                    Keep track of your pet's daily care, vaccinations,
+                    medicines and important reminders in one simple place.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#reminder" class="primary-btn">
+                        Get Started
+                    </a>
+
+                    <a href="#about" class="secondary-btn">
+                        Learn More
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="pet-circle">
+                <img src="https://png.pngtree.com/png-clipart/20250220/original/pngtree-a-cute-puppy-and-kitten-sitting-together-png-image_20481034.png" alt="">
+                </div>
+
+        </section>
+
+
+        <!-- Reminder Section -->
+        <section class="simple-section" id="reminder">
+
+            <p class="section-label">STAY ON TRACK</p>
+
+            <h2>Pet Reminders 🔔</h2>
+
+            <p>
+                Never forget your pet's important care activities.
+            </p>
+
+            <div class="reminder-box">
+
+                <div>
+                    <h3>💉 Vaccination</h3>
+                    <p>Keep vaccination dates in mind.</p>
+                </div>
+
+                <div>
+                    <h3>💊 Medicine</h3>
+                    <p>Remember your pet's medicines.</p>
+                </div>
+
+                <div>
+                    <h3>🍖 Food</h3>
+                    <p>Maintain a regular food schedule.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="simple-section about-section" id="about">
+
+            <p class="section-label">ABOUT US</p>
+
+            <h2>Everything Your Pet Needs ❤️</h2>
+
+            <p>
+                PetCare is a simple pet management website designed
+                to help pet owners organize their pet's everyday care.
+                From reminders to health information, everything can
+                be managed easily in one place.
+            </p>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="simple-section contact-section" id="contact">
+
+            <p class="section-label">CONTACT</p>
+
+            <h2>Have a Question? 🐾</h2>
+
+            <p>
+                We'd love to hear from you.
+            </p>
+
+            <button class="primary-btn" id="contactBtn">
+                Contact Us
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Contact Popup -->
+    <div class="modal" id="contactModal">
+
+        <div class="modal-content">
+
+            <button class="close-btn" id="closeBtn">&times;</button>
+
+            <h2>Contact PetCare 🐾</h2>
+
+            <form id="contactForm">
+
+                <input type="text"id="name" placeholder="Your Name" required>
+
+                <input type="email"id="email" placeholder="Your Email required" >
+
+                <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+
+                <button type="submit" class="primary-btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 PetCare 🐾 | Made with ❤️ for pets</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
