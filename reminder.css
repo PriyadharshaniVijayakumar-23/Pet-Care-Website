@@ -391,6 +391,10 @@ footer {
 
         z-index: 1000;
     }
+    .nav-links a{
+        color: #3d7452;
+        padding: 10px;
+    }
 
     .nav-links.active {
         display: flex;
