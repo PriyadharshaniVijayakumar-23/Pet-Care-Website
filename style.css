@@ -47,7 +47,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #3d7452;
     font-weight: bold;
     font-size: 15px;
 }
@@ -353,6 +353,10 @@ footer {
 
         border-bottom: 1px solid #eeeeee;
     }
+    .nav-links  a{
+        color: #3d7452;
+        padding: 10px;
+    }
 
     .nav-links.active {
         display: flex;
@@ -360,6 +364,7 @@ footer {
 
     .menu-btn {
         display: block;
+        color: white;
     }
 
     .hero {
