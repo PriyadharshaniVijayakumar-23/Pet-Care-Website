@@ -68,6 +68,7 @@ header {
     background: none;
     font-size: 25px;
     cursor: pointer;
+    color: white;
 }
 
 
@@ -377,7 +378,7 @@ footer {
 
         width: 100%;
 
-        background-color: #ffffff;
+        background-color: white;
 
         flex-direction: column;
         align-items: center;
@@ -388,7 +389,7 @@ footer {
 
         border-bottom: 1px solid #eeeeee;
 
-        z-index: 999;
+        z-index: 1000;
     }
 
     .nav-links.active {
@@ -397,6 +398,7 @@ footer {
 
     .menu-btn {
         display: block;
+        color: white;
     }
 
 
